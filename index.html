@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redha Aziz | Personal Web Application</title>
+    <meta
+        name="description"
+        content="A polished personal portfolio web application by Redha Aziz featuring projects, skills, goals, and interactive tools."
+    >
+    <meta name="theme-color" content="#0f172a">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=DM+Sans:wght@400;500;700&display=swap"
+        rel="stylesheet"
+    >
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="#hero">
+                <span class="brand-mark" aria-hidden="true"></span>
+                <span class="brand-copy">
+                    <strong>Redha Aziz</strong>
+                    <span>Portfolio App</span>
+                </span>
+            </a>
+
+            <nav class="nav" aria-label="Primary">
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navMenu">
+                    <span class="sr-only">Toggle navigation menu</span>
+                    <span class="burger" aria-hidden="true"></span>
+                </button>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li><a class="nav-link" href="#about">About</a></li>
+                    <li><a class="nav-link" href="#toolkit">Toolkit</a></li>
+                    <li><a class="nav-link" href="#projects">Projects</a></li>
+                    <li><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button class="theme-toggle" type="button" aria-label="Toggle color theme">
+                <span class="theme-icon" aria-hidden="true">Moon</span>
+                <span class="theme-text">Dark mode</span>
+            </button>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="hero section" id="hero">
+            <div class="container hero-grid">
+                <div class="hero-copy reveal">
+                    <p class="eyebrow">SWE363 Final Portfolio</p>
+                    <h1>Building reliable, human-centered web experiences.</h1>
+                    <p class="lead">
+                        I am Redha Aziz, a Computer and Information Science student focused on web development,
+                        software engineering, and practical problem solving. This web application brings together
+                        my skills, projects, AI-assisted workflow, and the way I turn ideas into polished solutions.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a class="btn primary" href="#projects">Explore Projects</a>
+                        <a class="btn" href="#contact">Work With Me</a>
+                    </div>
+
+                    <div class="hero-metrics" aria-label="Portfolio summary">
+                        <article class="metric-card">
+                            <strong id="projectCount">0</strong>
+                            <span>Projects tracked</span>
+                        </article>
+                        <article class="metric-card">
+                            <strong id="sessionTimer">0s</strong>
+                            <span>Current session</span>
+                        </article>
+                        <article class="metric-card">
+                            <strong id="visitCounter">0</strong>
+                            <span>Return visits</span>
+                        </article>
+                    </div>
+                </div>
+
+                <aside class="hero-panel reveal delay-1" aria-label="Quick dashboard">
+                    <div class="panel-glow" aria-hidden="true"></div>
+                    <div class="status-pill">
+                        <span class="status-dot" aria-hidden="true"></span>
+                        Available for internships and collaborative projects
+                    </div>
+                    <h2>Personal command center</h2>
+                    <p class="muted">
+                        The app remembers your preferred theme, saves a message draft locally, loads GitHub
+                        repositories when available, and gives a richer way to explore my project work.
+                    </p>
+
+                    <div class="dashboard">
+                        <article>
+                            <span class="dashboard-label">Current focus</span>
+                            <strong>Frontend polish, clean JavaScript, better UX</strong>
+                        </article>
+                        <article>
+                            <span class="dashboard-label">Strengths</span>
+                            <strong>Technical support, adaptability, structured thinking</strong>
+                        </article>
+                        <article>
+                            <span class="dashboard-label">Location</span>
+                            <strong>Eastern Province, Saudi Arabia</strong>
+                        </article>
+                    </div>
+
+                    <form class="welcome-form" id="welcomeForm">
+                        <label for="usernameInput">Personalize your visit</label>
+                        <div class="inline-form">
+                            <input id="usernameInput" type="text" maxlength="30" placeholder="Enter your name">
+                            <button class="btn" type="submit">Save</button>
+                        </div>
+                        <p id="welcomeMsg" class="welcome-message" aria-live="polite"></p>
+                    </form>
+                </aside>
+            </div>
+        </section>
+
+        <section class="section" id="about">
+            <div class="container section-stack">
+                <div class="section-title reveal">
+                    <p class="eyebrow">About</p>
+                    <h2>From technical support to polished software delivery</h2>
+                </div>
+
+                <div class="about-grid">
+                    <article class="surface-card reveal">
+                        <p>
+                            I enjoy building interfaces that are practical, responsive, and easy to use.
+                            My background in IT support taught me to stay calm under pressure, diagnose problems
+                            quickly, and design around real user frustrations.
+                        </p>
+                        <p>
+                            That experience now shapes how I approach software projects: understand the user,
+                            structure the work clearly, and deliver something dependable instead of just functional.
+                        </p>
+                    </article>
+
+                    <article class="surface-card reveal delay-1">
+                        <h3>What I focused on this semester</h3>
+                        <ul class="feature-list">
+                            <li>Building responsive, standards-based websites with semantic HTML and clean CSS</li>
+                            <li>Using JavaScript to create dynamic filtering, local storage, validation, and API-based content</li>
+                            <li>Improving project quality through documentation, testing mindset, and iterative design</li>
+                            <li>Using AI responsibly to accelerate learning, debugging, and interface refinement</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt" id="toolkit">
+            <div class="container section-stack">
+                <div class="section-title reveal">
+                    <p class="eyebrow">Toolkit</p>
+                    <h2>Technologies and work styles I bring into projects</h2>
+                </div>
+
+                <div class="toolkit-grid">
+                    <article class="surface-card reveal">
+                        <h3>Core technologies</h3>
+                        <div class="chips" role="list">
+                            <span class="chip" role="listitem">HTML5</span>
+                            <span class="chip" role="listitem">CSS3</span>
+                            <span class="chip" role="listitem">JavaScript</span>
+                            <span class="chip" role="listitem">Git & GitHub</span>
+                            <span class="chip" role="listitem">Python</span>
+                            <span class="chip" role="listitem">Java</span>
+                            <span class="chip" role="listitem">C#</span>
+                            <span class="chip" role="listitem">SQL Server</span>
+                            <span class="chip" role="listitem">MySQL</span>
+                            <span class="chip" role="listitem">ASP.NET</span>
+                        </div>
+                    </article>
+
+                    <article class="surface-card reveal delay-1">
+                        <h3>How I work</h3>
+                        <div class="capability-grid">
+                            <div>
+                                <span class="mini-label">Support mindset</span>
+                                <p>I design around clarity, helpful feedback, and fewer user frustrations.</p>
+                            </div>
+                            <div>
+                                <span class="mini-label">Continuous improvement</span>
+                                <p>I iterate fast, review critically, and refine both code and presentation quality.</p>
+                            </div>
+                            <div>
+                                <span class="mini-label">Reliable delivery</span>
+                                <p>I value clean structure, practical features, and documentation that others can follow.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="projects">
+            <div class="container section-stack">
+                <div class="section-title reveal">
+                    <p class="eyebrow">Projects</p>
+                    <h2>Interactive portfolio explorer</h2>
+                    <p class="muted">
+                        Search, filter, sort, and open project details. GitHub repositories are loaded dynamically when
+                        the API is available, with local portfolio projects always kept as a fallback.
+                    </p>
+                </div>
+
+                <div class="project-shell reveal delay-1">
+                    <div class="project-controls">
+                        <div class="control">
+                            <label for="projectSearch">Search</label>
+                            <input
+                                type="search"
+                                id="projectSearch"
+                                class="search-input"
+                                placeholder="Try: HTML, database, quiz..."
+                            >
+                        </div>
+
+                        <div class="control">
+                            <label for="filterType">Category</label>
+                            <select id="filterType">
+                                <option value="all">All categories</option>
+                                <option value="frontend">Frontend</option>
+                                <option value="fullstack">Full stack</option>
+                                <option value="mobile">Mobile</option>
+                                <option value="github">GitHub imports</option>
+                            </select>
+                        </div>
+
+                        <div class="control">
+                            <label for="levelFilter">Complexity</label>
+                            <select id="levelFilter">
+                                <option value="all">All levels</option>
+                                <option value="beginner">Beginner</option>
+                                <option value="intermediate">Intermediate</option>
+                                <option value="advanced">Advanced</option>
+                            </select>
+                        </div>
+
+                        <div class="control">
+                            <label for="sortType">Sort</label>
+                            <select id="sortType">
+                                <option value="featured">Featured first</option>
+                                <option value="az">A to Z</option>
+                                <option value="za">Z to A</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="projects-toolbar">
+                        <p id="projectsStatus" class="projects-status" role="status" aria-live="polite"></p>
+                        <button id="toggleProjects" class="btn ghost" type="button">Hide project grid</button>
+                    </div>
+
+                    <div class="projects-grid" id="projectsGrid" aria-live="polite"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="contact">
+            <div class="container section-stack">
+                <div class="section-title reveal">
+                    <p class="eyebrow">Contact</p>
+                    <h2>Send a message</h2>
+                    <p class="muted">
+                        The form validates input, saves a message draft locally, and gives clear status feedback.
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+                    <article class="surface-card reveal">
+                        <h3>Why this section matters</h3>
+                        <p>
+                            A good portfolio should not stop at showing work. It should invite conversation,
+                            provide clear contact points, and treat form feedback as part of the user experience.
+                        </p>
+                        <div class="contact-points">
+                            <p><span>Email focus</span> Professional communication</p>
+                            <p><span>Feedback style</span> Helpful, specific, and immediate</p>
+                            <p><span>Persistence</span> Draft saved automatically in your browser</p>
+                        </div>
+                    </article>
+
+                    <form class="form surface-card reveal delay-1" id="contactForm" novalidate>
+                        <div class="field">
+                            <label for="name">Name</label>
+                            <input id="name" name="name" type="text" autocomplete="name" required>
+                            <small class="error" data-error-for="name"></small>
+                        </div>
+
+                        <div class="field">
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="email" autocomplete="email" required>
+                            <small class="error" data-error-for="email"></small>
+                        </div>
+
+                        <div class="field">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                            <small class="error" data-error-for="message"></small>
+                        </div>
+
+                        <div class="form-actions">
+                            <button class="btn primary" type="submit">Send message</button>
+                            <button class="btn ghost" id="clearDraftBtn" type="button">Clear draft</button>
+                        </div>
+                        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div>
+                <p class="footer-title">Redha Aziz</p>
+                <p class="muted">Personal web application for SWE363 Assignment 4.</p>
+            </div>
+            <p class="muted">© <span id="year"></span> Built with HTML, CSS, JavaScript, and responsible AI support.</p>
+        </div>
+    </footer>
+
+    <dialog class="project-modal" id="projectModal">
+        <div class="modal-header">
+            <div>
+                <p class="eyebrow">Project Details</p>
+                <h2 id="modalTitle">Project title</h2>
+            </div>
+            <button class="icon-btn" id="closeModalBtn" type="button" aria-label="Close project details">Close</button>
+        </div>
+        <p id="modalDescription" class="modal-copy"></p>
+        <div class="modal-meta" id="modalMeta"></div>
+        <div class="project-links" id="modalLinks"></div>
+    </dialog>
+
+    <script src="js/script.js" defer></script>
+</body>
+</html>
